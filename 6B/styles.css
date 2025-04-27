@@ -3,11 +3,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: Arial, sans-serif;
-    background-image: url("tassu3.jpg");
+    background-image: url("tassu4.jpg");
 }
 
 #header {
-    background-image: url("silmä.png");
+    background-image: url("silmät.jpeg");
     background-size: cover; /* makes the image cover the whole header */
     background-position: center; /* centers the image */
     background-repeat: no-repeat; /* stops it from repeating */
