@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HopePuppies</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">HopePuppies</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="adopt.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ADOPT A DOG</a>
+      <a href="stories.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> STORIES</a>
+      <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="adopt.html" onclick="w3_close()" class="w3-bar-item w3-button">ADOPT A DOG</a>
+  <a href="stories.html" onclick="w3_close()" class="w3-bar-item w3-button">STORIES</a>
+  <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Homeless, but not hopeless</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Homeless, but not hopeless</span><br>
+    <span class="w3-large">Your kindness can change their future.</span>
+    <p><a href="about.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and adopt today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</header>
+
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We help the ones that can not ask for it.</h3>
+      <p>In HopePuppies, we help homeless dogs find their forever homes. </p>
+      <p><a href="stories.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Stories</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="mission2.avif" alt="woman with a dog" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">1200+</span>
+    <br>Resqued
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">700+</span>
+    <br>Neutered
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">970+</span>
+    <br>Vaccinated
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">950+</span>
+    <br>Adopted
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our mission.</h3>
+      <p>The State of Pet Homelessness Project' reveals 
+        there's approximately 362 million homeless pets across 20 countries surveyed. 
+        The findings indicate approximately 35% of cats and dogs live on the streets or in shelters. 
+        That's about 143 million dogs and 203 million cats on the streets.</p>
+        <p>It is also estimated that each day 1.2 million puppies are being born worldwide. The number of pups born each day 
+            overtakes the number of human babies born into the world, with approximately 
+            1.2 million pups to 360,000 babies. That's roughly 3 times as many puppies as humans!</p>
+        
+        <p> Our mission is to help as many homeless animals as we possible can. This is also why we take neutering very seriously in our shelter. By neutering 700 street dogs in the spawn of 12 years, 
+            this shelter has potentially prevented around 70,000 puppies from being born into dangerous, hungry
+             and homeless lives. </p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"></i>Homeless pets</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center">362 million</div>
+      </div>
+      <p class="w3-wide"></i>Puppies being born daily</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center">1.2 million </div>
+      </div>
+      <p class="w3-wide"></i>Neuterings</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center">700+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-64">
+  <a href="index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
