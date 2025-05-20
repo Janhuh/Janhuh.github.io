@@ -78,7 +78,7 @@ body, html {
     position: relative;
     overflow: hidden;
     padding: 20px;
-    z-index: -1;
+    z-index: -2;
   }
   
   .product-category {
@@ -177,7 +177,7 @@ body, html {
     align-items: center;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
     cursor: pointer;
-    z-index: 8;
+    z-index: 1;
   }
   
   .pre-btn {
