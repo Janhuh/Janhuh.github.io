@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Donate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html">
+            <img src="logo.png" height="100" class="w3-bar-item w3-button w3-wide" alt="HopePuppies logo">
+          </a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="adopt.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ADOPT A DOG</a>
+        <a href="stories.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> STORIES</a>
+        <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+        <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="adopt.html" onclick="w3_close()" class="w3-bar-item w3-button">ADOPT A DOG</a>
+    <a href="stories.html" onclick="w3_close()" class="w3-bar-item w3-button">STORIES</a>
+    <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+  
+
+<!-- Donations Section -->
+<div class="w3-container w3-center w3-white" style="padding:128px 16px" id="pricing">
+    <h3>Donations</h3>
+    <p class="w3-large">Please concider donating to our shelter. All money donated goes staright to 
+      helping our dogs. <br>With your donations, we can provide our dogs with vaccinations, food, beds, neuterings and more.
+    </p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-green w3-hover-shadow">
+          <li class="w3-light-grey w3-xlarge w3-padding-32">Food bag</li>
+          <li class="w3-padding-16">10 kg of dog food</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 10</h2>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Donate</button>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-green w3-hover-shadow">
+          <li class="w3-light-grey w3-xlarge w3-padding-32">Healthcare</li>
+          <li class="w3-padding-16">2 Vaccines</li>
+          <li class="w3-padding-16">1 Neutering</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 50</h2>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Donate</button>
+          </li>
+        </ul>
+      </div>
+
+          <div class="w3-third w3-section">
+            <ul class="w3-ul w3-green w3-hover-shadow">
+              <li class="w3-light-grey w3-xlarge w3-padding-32">Sleeping beds</li>
+              <li class="w3-padding-16">3 beds</li>
+              <li class="w3-padding-16">
+                <h2 class="w3-wide">$ 30</h2>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-black w3-padding-large">Donate</button>
+              </li>
+            </ul>
+          </div>
+     
+    </div>
+  </div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-64">
+    <a href="index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a><!--
+      --><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a><!--
+      --><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    </div>
+  </footer>
+   
+  <script>
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+  
+  </body>
+  </html>
+  

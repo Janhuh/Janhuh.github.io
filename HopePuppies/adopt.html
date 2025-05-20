@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Adopt</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="index.html">
+            <img src="logo.png" height="100" class="w3-bar-item w3-button w3-wide" alt="HopePuppies logo">
+          </a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="adopt.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ADOPT A DOG</a>
+        <a href="stories.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> STORIES</a>
+        <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> DONATE</a>
+        <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="adopt.html" onclick="w3_close()" class="w3-bar-item w3-button">ADOPT A DOG</a>
+    <a href="stories.html" onclick="w3_close()" class="w3-bar-item w3-button">STORIES</a>
+    <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+  
+  <!-- Adopt Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">Happy to see you're interested in adopting a dog!</h3>
+    <p class="w3-center w3-large">
+      Adopting a dog is a lifelong commitment, not just a kind gesture.<br>
+      We want every dog to find a safe, loving, and permanent home.
+      To ensure that, we have a few important guidelines:
+    </p>
+  
+    <h3>1. A Stable and Safe Home</h3>
+    <ul>
+      <li>You must be at least 21 years old to adopt.</li>
+      <li>We only adopt to homes where dogs are allowed (no temporary housing or lease violations).</li>
+      <li>A secure yard or regular leashed walks are required, no dogs will be adopted to homes where they’ll be left tied up outside.</li>
+    </ul>
+  
+    <h3>2. Time, Patience, and Love</h3>
+    <ul>
+      <li>Many of our dogs come from difficult backgrounds. Adopters must be patient, especially in the early weeks.</li>
+      <li>Accidents, fear or shyness might be present at first. It takes time for a dog to adjust to a new life.</li>
+    </ul>
+  
+    <h3>3. Long-Term Commitment</h3>
+    <ul>
+      <li>Dogs live 10–15 years or more. Please consider your future plans moving, kids, travel and work before adopting.</li>
+      <li>If your situation changes, you must contact us before rehoming the dog elsewhere.</li>
+    </ul>
+  
+    <h3>4. No Chain Adoptions</h3>
+    <ul>
+      <li>You may not adopt a dog as a gift or on behalf of someone else. The adopter must be the one who will live with and care for the dog.</li>
+    </ul>
+  
+    <h3>5. Other Pets</h3>
+    <ul>
+      <li>If you have other pets, we’ll help arrange a safe introduction. Some dogs don’t do well with cats or other dogs. Let’s find the right match for everyone.</li>
+    </ul>
+  
+    <h3>6. Adoption Fee</h3>
+    <ul>
+      <li>An adoption fee applies. This helps cover vaccinations, neutering/spaying, microchipping and care while in the shelter.</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h3 class="w3-center">We care about every dog like they’re our own.</h3>
+    <p class="w3-center w3-large">
+      If you’re ready to commit, we’ll help you find the perfect companion.
+    </p>
+  
+    <div class="w3-container w3-center">
+      <img src="adopt2.jpg" alt="two people holding dogs" class="w3-image w3-round-large" style="max-width:100%; height:auto;">
+    </div>
+    <br><br>
+  </div>
+  
+    <!-- Adoption slots -->
+
+    <h3 class="w3-center">Dogs, that are up for adoption:</h3>
+
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="story7.jpg" alt="a pittbull dog" style="width:100%">
+          <div class="w3-container">
+            <h3>Elvis</h3>
+            <p class="w3-opacity">Male, 3 years old, Pittbull Mix - Neutered</p>
+            <p>Elvis has so much energy it’s like he’s made of springs. He loves the beach, car rides, and chasing waves.
+                 He’s still waiting for an active home that can keep up. Until then, we keep him busy.</p>
+    
+                 <p>
+                    <a href="contact.html" class="w3-button w3-light-grey w3-block">
+                      <i class="fa fa-envelope"></i> Contact
+                    </a>
+                </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="story3.jpg" alt="chihuahua dog" style="width:100%">
+          <div class="w3-container">
+            <h3>Jojo</h3>
+            <p class="w3-opacity">Male, 6 years old, Chihuahua Mix</p>
+            <p>Jojo’s been returned twice. Not his fault, just bad matches. 
+                He’s goofy, high-energy, and needs someone who gets him.
+                 He’s still waiting, still hopeful. We are too. The right person is out there.</p>
+            
+            <p>
+                <a href="contact.html" class="w3-button w3-light-grey w3-block">
+                  <i class="fa fa-envelope"></i> Contact
+                </a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="story1.avif" alt="brown dog" style="width:100%">
+          <div class="w3-container">
+            <h3>Tilly</h3>
+            <p class="w3-opacity">Female, 2,5 years old, Greyhound Mix - Neutered</p>
+            <p>Tilly came to us scared of everything : loud sounds, 
+                fast movements, even her own shadow. She’s still timid, 
+                but she’s gentle and sweet. We know she just needs someone 
+                patient to show her what love feels like. Maybe a home in the calmer countryside 
+                would be the best place for Tilly.</p>
+            
+            <p>
+                <a href="contact.html" class="w3-button w3-light-grey w3-block">
+                  <i class="fa fa-envelope"></i> Contact
+                </a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="adopt4.jpg" alt="white and brown puppy dog" style="width:100%">
+          <div class="w3-container">
+            <h3>Lil Bud</h3>
+            <p class="w3-opacity">Male, 6 months old, Labrador Mix </p>
+            <p>Lil Bud is all legs, ears and energy! He’s a goofy, lovable pup who wants 
+                to play with every dog he meets and climb into every human’s lap. 
+                He’s still learning the basics, like not chewing shoes, but he’s smart and eager to please.
+                 A great match for an active home ready for puppyhood adventures!</p>
+            
+                <p>
+                    <a href="contact.html" class="w3-button w3-light-grey w3-block">
+                      <i class="fa fa-envelope"></i> Contact
+                    </a>
+                </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="adopt5.jpg" alt="small black and white dog" style="width:100%">
+          <div class="w3-container">
+            <h3>Pepi</h3>
+            <p class="w3-opacity">Female, 4 years old, Terrier Mix - Neutered</p>
+            <p>Pepi is small but mighty. 
+                She’s confident, curious and has just the right amount of sass. 
+                She loves cuddles, car rides and following you around the house like a little shadow. 
+                She’d thrive in a home where she can be the center of attention.
+                NO CATS, PLEASE, she says!</p>
+            
+            <p>
+                <a href="contact.html" class="w3-button w3-light-grey w3-block">
+                  <i class="fa fa-envelope"></i> Contact
+                </a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="adopt3.jpg" alt="Dan" style="width:100%">
+          <div class="w3-container">
+            <h3>Angel</h3>
+            <p class="w3-opacity">Female, 5,5 years old, Kelpie Mix - Neutered</p>
+            <p>Angel is calm, gentle and incredibly loyal.
+                 She watches everything with intelligent eyes and bonds deeply with her people. 
+                 She loves long walks and puzzle toys, but is just as happy napping near your feet. 
+                 She’d be perfect for someone who wants a steady, loving companion. Quiet home preferred.</p>
+            
+            <p>
+                <a href="contact.html" class="w3-button w3-light-grey w3-block">
+                  <i class="fa fa-envelope"></i> Contact
+                </a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-64">
+    <a href="index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a><!--
+      --><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a><!--
+      --><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    </div>
+  </footer>
+   
+  <script>
+  
+  
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+  
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
+  </script>
+  
+  </body>
+  </html>
+  
